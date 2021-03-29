@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="[zR{rw6ke@sP+qro_UU9">Player</variable><variable type="KIND_SpriteKind" id="r-ltGi;!m~_5)k`{3~d{">Projectile</variable><variable type="KIND_SpriteKind" id="LA~BvtiMVBOYs1DSEd9t">Food</variable><variable type="KIND_SpriteKind" id="`N)n/y1W%_wBOC%ANs$y">Enemy</variable><variable id="(oSmjAX`?B8,^+G9Q~/6">mySprite</variable><variable id="X7(I=*!.0;.?08iSiQ_j">projectile</variable><variable id=":Dg]c)%#Nj681L[TdJrH">picture</variable></variables><block type="pxt-on-start" id="iJ3T(4V/C5_tSV6G=V!p" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="j`#8+E2O.Ml;UO4G)+0="><value name="color"><shadow type="colorindexpicker" id="5FY0k8A#EwbVcRigUm,@"><field name="index">9</field></shadow></value><next><block type="variables_set" id="XS8CKNcfHL](eS$xGWfM"><field name="VAR" id="(oSmjAX`?B8,^+G9Q~/6">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="Mra(HxjMHDxX7f{(PXj0"><value name="img"><shadow type="screen_image_picker" id="s;G9WtB*!9pPKe#kis;H"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . 5 . 5 . 5 . . . . . . . 
+. . . 5 5 5 5 5 5 5 . . . . . . 
+. . 5 5 1 1 1 1 1 5 5 . . . . . 
+. . . 5 f 1 1 1 f 5 . . . . . . 
+. . 5 5 1 1 1 1 1 5 5 . . . . . 
+. . . 5 f 1 1 1 f 5 . . . . . . 
+. . 5 5 1 f f f 1 5 5 . . . . . 
+. . . 5 5 5 5 5 5 5 . . . . . . 
+. . . . 5 . 7 . 5 . . . . . . . 
+. . . . . . 7 . 7 . . . . . . . 
+. . . . 7 . 7 7 7 7 . . . . . . 
+. . . 7 7 7 7 . . . . . . . . . 
+. . . . . . 7 . . . . . . . . . 
+. . . . 7 7 7 7 7 . . . . . . . 
+. . . . . 7 . 7 . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image1"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="c0Acx)TQGCK;8O$+/_~U"><field name="MEMBER">Player</field></shadow></value></block></value></block></next></block></statement></block><block type="gameinterval" id="a_P[=H8M~S0{U1/vhkZ7" x="0" y="360"><value name="period"><shadow type="timePicker" id="o[NeWo*W/R;Q=,Hl/k_t"><field name="ms">1000</field></shadow></value><statement name="HANDLER"><block type="variables_set" id="FN+{dr-)X},FcQVRViD,"><field name="VAR" id="X7(I=*!.0;.?08iSiQ_j">projectile</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreateprojectilefromsprite" id="aq8cs*urr6WEH}*a{l-+"><value name="img"><shadow type="screen_image_picker" id="GQ{t+mHnY?z6Bt3DZ!g0"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . f 
+. . . . . . . . . 5 f 5 f 5 f . 
+. . . . . . . . . 5 f 5 1 9 . . 
+. . . . . . . . f 5 f 5 f 5 . . 
+. . . . . . . . . 5 f 5 f 5 . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image4"}}</data></shadow></value><value name="sprite"><block type="variables_get" id="bD|D*pd?gE*OQjR/:KN@"><field name="VAR" id="(oSmjAX`?B8,^+G9Q~/6">mySprite</field></block></value><value name="vx"><shadow type="spriteSpeedPicker"><field name="speed">50</field></shadow><block type="device_random" id=";$e1ULT:uA!M^;swKBx="><value name="min"><shadow type="math_number" id="~/Y*J$r?$FH6K~x(0UdD"><field name="NUM">-25</field></shadow></value><value name="limit"><shadow type="math_number" id="$$(=@5}Q7[v_!z8%1Z0R"><field name="NUM">25</field></shadow></value></block></value><value name="vy"><shadow type="spriteSpeedPicker"><field name="speed">50</field></shadow><block type="device_random" id="CyJI_qAd?n)hX]O/[F{="><value name="min"><shadow type="math_number" id="+y)FmdfEa#(,5_S8j9)6"><field name="NUM">-25</field></shadow></value><value name="limit"><shadow type="math_number" id="KLd8{!n~}n%bnjH#JJIY"><field name="NUM">25</field></shadow></value></block></value></block></value></block></statement></block></xml>
